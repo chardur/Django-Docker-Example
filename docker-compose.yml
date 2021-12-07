@@ -14,6 +14,8 @@ services:
              python manage.py runserver 0.0.0.0:8000"
     environment:
         - SECRET_KEY=${SECRET_KEY}
+        - DEBUG=${DEBUG}
+        - ALLOWED_HOSTS=${ALLOWED_HOSTS}
         - DB_HOST=${DB_HOST}
         - DB_NAME=${DB_NAME}
         - DB_USER=${DB_USER}
